@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\TODO\**" />
+    <EmbeddedResource Remove="Models\TODO\**" />
+    <None Remove="Models\TODO\**" />
+  </ItemGroup>
+
+<ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.78" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+<ItemGroup>
+  <ProjectReference Include="..\HotChoculate.Infrastructure.Core\HotChoculate.Infrastructure.Core.csproj" />
+</ItemGroup>
+</Project>
